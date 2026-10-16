@@ -1,25 +1,56 @@
-import SelfIntroduction from "./components/SelfIntroduction";
+
+import Child from "./child";
 import "./App.css";
 
-function App() {
+export default function App() {
   return (
-    <div className="app">
-      <header className="navbar">
-        <a href="#" className="logo">
-          Rutuja Kupade
-        </a>
+    <div className="app-container">
+      <h1>User Information</h1>
+      <p className="subtitle">
+        React Props - Parent to Child Data Passing
+      </p>
 
-        <nav className="nav-links">
-          <a href="#">Home</a>
-          <a href="#about">About</a>
-          <a href="#skills">Skills</a>
-          <a href="#experience">Experience</a>
-        </nav>
-      </header>
+      <div className="user-container">
+        <Child
+          name="Rutuja Kupade"
+          city="Pune"
+          age={24}
+          email="rutuja@example.com"
+          phone="9561581938"
+        />
 
-      <SelfIntroduction />
+        <Child
+          name="Akshay Patil"
+          city="Mumbai"
+          age={25}
+          email="akshay@example.com"
+          phone="9876543211"
+        />
+
+        <Child
+          name="Priya Sharma"
+          city="Bangalore"
+          age={23}
+          email="priya@example.com"
+          phone="9876543212"
+        />
+
+        <Child
+          name="Rahul Deshmukh"
+          city="Hyderabad"
+          age={26}
+          email="rahul@example.com"
+          phone="9876543213"
+        />
+
+        <Child
+          name="Sneha Joshi"
+          city="Nashik"
+          age={22}
+          email="sneha@example.com"
+          phone="9876543214"
+        />
+      </div>
     </div>
   );
 }
-
-export default App;
