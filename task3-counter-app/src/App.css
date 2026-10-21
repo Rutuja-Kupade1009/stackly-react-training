@@ -1,0 +1,188 @@
+
+/* Main layout */
+.app {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  font-family: Arial, Helvetica, sans-serif;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+/* Light and Dark themes */
+.light {
+  background-color: #f1f5f9;
+  color: #000000;
+}
+
+.dark {
+  background-color: #111827;
+  color: #f9fafb;
+}
+
+/* Main card */
+.counter-card {
+  width: 100%;
+  max-width: 520px;
+  padding: 36px 30px;
+  border-radius: 20px;
+  text-align: center;
+  box-shadow: 0 10px 35px rgba(0, 0, 0, 0.12);
+  transition: background-color 0.3s ease;
+}
+
+.light .counter-card {
+  background-color: #ffffff;
+}
+
+.dark .counter-card {
+  background-color: #1f2937;
+}
+
+/* Heading and subtitle */
+h1 {
+  font-size: 28px;
+  margin-bottom: 10px;
+}
+
+.subtitle {
+  font-size: 18px;
+  margin-bottom: 30px;
+  opacity: 0.8;
+}
+
+/* Theme section appears before the counter */
+.theme-section {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin-bottom: 25px;
+}
+
+.theme-label {
+  font-size: 14px;
+}
+
+/* All buttons */
+button {
+  border: none;
+  border-radius: 9px;
+  padding: 12px 16px;
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: transform 0.2s ease, opacity 0.2s ease;
+}
+
+button:hover {
+  transform: translateY(-2px);
+  opacity: 0.88;
+}
+
+button:focus-visible {
+  outline: 3px solid #f59e0b;
+  outline-offset: 3px;
+}
+
+/* Theme toggle button */
+.theme-button {
+  background-color: #64748b;
+  color: #ffffff;
+}
+
+/* Counter display */
+.counter-display {
+  padding: 25px 15px;
+  margin-bottom: 25px;
+  border-radius: 14px;
+}
+
+.light .counter-display {
+  background-color: #f1f5f9;
+  color: #000000;
+}
+
+.dark .counter-display {
+  background-color: #374151;
+  color: #ffffff;
+}
+
+.counter-display p {
+  font-size: 16px;
+  margin-bottom: 12px;
+}
+
+.counter-display h2 {
+  font-size: 64px;
+  font-weight: bold;
+}
+
+/* Counter action buttons */
+.counter-buttons {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+
+.increment {
+  background-color: #16a34a;
+  color: #ffffff;
+}
+
+.decrement {
+  background-color: #dc2626;
+  color: #ffffff;
+}
+
+.reset {
+  background-color: #2563eb;
+  color: #ffffff;
+}
+
+/* Requirement: all text black in Light Mode */
+.light .theme-button,
+.light .counter-buttons button {
+  color: #000000;
+}
+
+/* Footer */
+.footer-text {
+  margin-top: 28px;
+  font-size: 13px;
+  opacity: 0.75;
+}
+
+/* Responsive design for mobile */
+@media (max-width: 480px) {
+  .counter-card {
+    padding: 25px 18px;
+  }
+
+  h1 {
+    font-size: 23px;
+  }
+
+  .subtitle {
+    font-size: 15px;
+  }
+
+  .theme-section {
+    flex-direction: column;
+  }
+
+  .counter-buttons {
+    flex-direction: column;
+  }
+
+  .counter-buttons button {
+    width: 100%;
+  }
+
+  .counter-display h2 {
+    font-size: 52px;
+  }
+}
