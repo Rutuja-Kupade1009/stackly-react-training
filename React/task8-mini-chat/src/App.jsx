@@ -2,7 +2,7 @@
 import { useState } from "react";
 import "./App.css";
 
-function App() {
+export default function App() {
   // Store the current input value
   const [message, setMessage] = useState("");
 
@@ -86,5 +86,3 @@ function App() {
     </div>
   );
 }
-
-export default App;
