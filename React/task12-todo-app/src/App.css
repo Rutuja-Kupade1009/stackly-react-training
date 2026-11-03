@@ -1,0 +1,223 @@
+
+* {
+  box-sizing: border-box;
+}
+
+.app-container {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 50px 20px;
+  background: #f1f5f9;
+}
+
+.todo-card {
+  width: 100%;
+  max-width: 650px;
+  padding: 30px;
+  background: white;
+  border-radius: 15px;
+  box-shadow: 0 5px 25px rgba(0, 0, 0, 0.08);
+}
+
+.todo-card h1 {
+  text-align: center;
+  color: #1e293b;
+  margin-bottom: 5px;
+}
+
+.subtitle {
+  text-align: center;
+  color: #64748b;
+  margin-bottom: 25px;
+}
+
+/* Todo Form */
+
+.todo-form form {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.todo-form input {
+  flex: 1;
+  min-width: 150px;
+  padding: 12px;
+  border: 1px solid #cbd5e1;
+  border-radius: 7px;
+  outline: none;
+}
+
+.todo-form input:focus {
+  border-color: #2563eb;
+}
+
+.todo-form button,
+.filter-section button {
+  padding: 11px 16px;
+  border: none;
+  border-radius: 7px;
+  cursor: pointer;
+  background: #2563eb;
+  color: white;
+}
+
+.cancel-btn {
+  background: #64748b !important;
+}
+
+.error {
+  color: red;
+  font-size: 13px;
+  margin-top: 8px;
+}
+
+/* Filters */
+
+.filter-section {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin: 25px 0;
+}
+
+.filter-section button {
+  background: #e2e8f0;
+  color: #334155;
+}
+
+.filter-section .active-filter {
+  background: #2563eb;
+  color: white;
+}
+
+/* Statistics */
+
+.todo-stats {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 10px;
+  font-size: 13px;
+  color: #64748b;
+  margin-bottom: 15px;
+}
+
+/* Todo Item */
+
+.todo-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 10px;
+  padding: 14px;
+  margin-bottom: 10px;
+  border: 1px solid #e2e8f0;
+  border-radius: 8px;
+}
+
+.todo-content {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  overflow-wrap: anywhere;
+}
+
+.todo-content input {
+  cursor: pointer;
+  width: 17px;
+  height: 17px;
+}
+
+.completed span {
+  text-decoration: line-through;
+  color: #94a3b8;
+}
+
+.todo-actions {
+  display: flex;
+  gap: 7px;
+  flex-shrink: 0;
+}
+
+.todo-actions button {
+  padding: 7px 10px;
+  border: none;
+  border-radius: 5px;
+  color: white;
+  cursor: pointer;
+}
+
+.edit-btn {
+  background: #0d9488;
+}
+
+.edit-btn:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+.delete-btn {
+  background: #ef4444;
+}
+
+.empty-message {
+  text-align: center;
+  color: #94a3b8;
+  padding: 25px;
+}
+
+.clear-btn {
+  display: block;
+  margin: 25px auto 0;
+  padding: 11px 18px;
+  border: none;
+  border-radius: 7px;
+  background: #dc2626;
+  color: white;
+  cursor: pointer;
+}
+
+/* Responsive Design */
+
+@media (max-width: 480px) {
+  .app-container {
+    padding: 20px 10px;
+  }
+
+  .todo-card {
+    padding: 20px 14px;
+  }
+
+  .todo-item {
+    align-items: flex-start;
+    flex-direction: column;
+  }
+
+  .todo-actions {
+    align-self: flex-end;
+  }
+
+  .todo-stats {
+    flex-direction: column;
+  }
+
+  .todo-form form {
+    flex-direction: column;
+  }
+
+  .todo-form input,
+  .todo-form button {
+    width: 100%;
+  }
+
+  .filter-section {
+    gap: 5px;
+  }
+
+  .filter-section button {
+    padding: 9px 12px;
+  }
+}

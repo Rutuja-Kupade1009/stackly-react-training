@@ -1,0 +1,14 @@
+
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+button {
+  font-family: inherit;
+  transition: 0.2s ease;
+}
+
+button:hover:not(:disabled) {
+  opacity: 0.85;
+}
