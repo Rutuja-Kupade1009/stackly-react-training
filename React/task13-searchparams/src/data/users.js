@@ -1,0 +1,23 @@
+export const users = [
+  { id: 1, name: "Rahul Sharma", email: "rahul@gmail.com", age: 25, city: "Pune" },
+  { id: 2, name: "Priya Patil", email: "priya@gmail.com", age: 24, city: "Mumbai" },
+  { id: 3, name: "Amit Verma", email: "amit@gmail.com", age: 27, city: "Delhi" },
+  { id: 4, name: "Sneha Kulkarni", email: "sneha@gmail.com", age: 23, city: "Pune" },
+  { id: 5, name: "Rohit Joshi", email: "rohit@gmail.com", age: 28, city: "Nashik" },
+  { id: 6, name: "Neha Singh", email: "neha@gmail.com", age: 26, city: "Bangalore" },
+  { id: 7, name: "Akash Patil", email: "akash@gmail.com", age: 25, city: "Kolhapur" },
+  { id: 8, name: "Pooja Desai", email: "pooja@gmail.com", age: 24, city: "Pune" },
+  { id: 9, name: "Karan Shah", email: "karan@gmail.com", age: 29, city: "Surat" },
+  { id: 10, name: "Anjali More", email: "anjali@gmail.com", age: 22, city: "Mumbai" },
+  { id: 11, name: "Vikas Gupta", email: "vikas@gmail.com", age: 30, city: "Delhi" },
+  { id: 12, name: "Riya Jadhav", email: "riya@gmail.com", age: 23, city: "Pune" },
+  { id: 13, name: "Sahil Mehta", email: "sahil@gmail.com", age: 27, city: "Jaipur" },
+  { id: 14, name: "Kavya Rao", email: "kavya@gmail.com", age: 25, city: "Hyderabad" },
+  { id: 15, name: "Nikhil Pawar", email: "nikhil@gmail.com", age: 26, city: "Pune" },
+  { id: 16, name: "Meera Joshi", email: "meera@gmail.com", age: 24, city: "Nashik" },
+  { id: 17, name: "Arjun Reddy", email: "arjun@gmail.com", age: 28, city: "Hyderabad" },
+  { id: 18, name: "Isha Shah", email: "isha@gmail.com", age: 22, city: "Surat" },
+  { id: 19, name: "Varun Kumar", email: "varun@gmail.com", age: 29, city: "Bangalore" },
+  { id: 20, name: "Sakshi Deshmukh", email: "sakshi@gmail.com", age: 25, city: "Pune" },
+  { id: 21, name: "Rutuja Kupade", email: "rutuja@gmail.com", age: 25, city: "Vita" }
+];
